@@ -154,7 +154,7 @@ h1 {
 }
 .img-h-dbms {
   height: 1.5em;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /*------------------------------------------ Projects -------------------------------------------- */
@@ -373,6 +373,57 @@ h1 {
     height: 10px;
     padding-right: 7px;
   }
+  h1 {
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .boxes {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  .box {
+    height: 120px;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
+    background-color: rgba(89, 3, 95, 0.121);
+    font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .img-h {
+    height: 8em;
+  }
+  .img-h-js {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-git {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-github {
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 7em;
+  }
+  .img-h-dbms {
+    height: 1em;
+    margin-top: 20px;
+  }
 }
 @media (min-width: 701px) and (max-width: 960px) {
   .navbar {
@@ -452,6 +503,57 @@ h1 {
     height: 10px;
     padding-right: 8px;
   }
+  h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .boxes {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  .box {
+    height: 140px;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
+    background-color: rgba(89, 3, 95, 0.121);
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .img-h {
+    height: 8em;
+  }
+  .img-h-js {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-git {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-github {
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 7em;
+  }
+  .img-h-dbms {
+    height: 1em;
+    margin-top: 20px;
+  }
 }
 @media (min-width: 961px) and (max-width: 1200px) {
   .navbar {
@@ -530,5 +632,56 @@ h1 {
   .resume-btn img {
     height: 12px;
     padding-right: 7px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .boxes {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
+    background-color: rgba(89, 3, 95, 0.121);
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .img-h {
+    height: 8em;
+  }
+  .img-h-js {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-git {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    height: 8em;
+  }
+  .img-h-github {
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 7em;
+  }
+  .img-h-dbms {
+    height: 1em;
+    margin-top: 20px;
   }
 }
