@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400&family=Titillium+Web:wght@600&display=swap");
 
 /* ------------------------------------- Common CSS--------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +18,17 @@
 .white {
   color: white;
 }
+h1 {
+  font-size: 60px;
+  margin-top: -1px;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+}
 body {
   background-color: #40034b;
+  max-width: 2000px;
+  margin: auto;
 }
 /* --------------------------------- Navbar & Introduction -------------------------------------- */
 
@@ -87,7 +97,7 @@ body {
 }
 #portfolio-img img {
   height: 280px;
-  border: 5px solid white;
+  border: 5px solid rgba(255, 255, 255, 0.201);
   border-radius: 50%;
 }
 .resume-btn {
@@ -106,12 +116,10 @@ body {
   padding-right: 10px;
 }
 /*------------------------------------------- Skills --------------------------------------------- */
-h1 {
-  font-size: 50px;
-  margin-top: -1px;
-  padding-top: 30px;
-  text-align: center;
-  letter-spacing: 3px;
+
+#skills {
+  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
+  padding: 60px 0;
 }
 .boxes {
   margin: 0 17%;
@@ -125,8 +133,9 @@ h1 {
   height: 170px;
   width: 170px;
   border-radius: 5px;
-  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
-  background-color: rgba(89, 3, 95, 0.121);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
+  background-color: rgba(17, 25, 40, 0.25);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   font-size: 0.8em;
   display: flex;
   flex-direction: column;
@@ -157,14 +166,110 @@ h1 {
   height: 1.5em;
   margin-top: 50px;
 }
-
 /*------------------------------------------ Projects -------------------------------------------- */
 
+#projects {
+  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
+  padding: 60px 0;
+}
+.containers-box {
+  margin: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+.container {
+  background-color: #37306b;
+  border-radius: 12px;
+  /* border: 1px solid rgba(255, 255, 255, 0.125); */
+  box-shadow: 1px 1px 15px 2px rgba(202, 173, 219, 0.103);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.banner-image {
+  background-image: url(./images/project-image.png);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.255);
+}
+.wrapper h1 {
+  font-family: "Titillium Web", sans-serif;
+  color: rgba(255, 255, 255, 0.98);
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.wrapper p {
+  color: rgba(255, 255, 255, 0.502);
+  font-family: "Quantico", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.button-wrapper {
+  margin-top: 18px;
+}
+.btn {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.fill:hover {
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
 /*----------------------------------------- Experience ------------------------------------------- */
-
+#experience {
+  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
+  padding: 60px 0;
+}
 /*------------------------------------------ Contact --------------------------------------------- */
-
+#contact {
+  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
+  padding: 60px 0;
+}
 /*---------------------------------------- Media Queries ------------------------------------------*/
+
 @media (max-width: 480px) {
   .navbar {
     display: grid;
@@ -226,7 +331,7 @@ h1 {
   }
   #portfolio-img img {
     height: 120px;
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.201);
     border-radius: 50%;
   }
   .resume-btn {
@@ -263,8 +368,9 @@ h1 {
     height: 100px;
     width: 100px;
     border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
-    background-color: rgba(89, 3, 95, 0.121);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
+    background-color: rgba(17, 25, 40, 0.25);
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
     font-size: 0.5em;
     display: flex;
     flex-direction: column;
@@ -356,7 +462,7 @@ h1 {
   }
   #portfolio-img img {
     height: 140px;
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.201);
     border-radius: 50%;
   }
   .resume-btn {
@@ -393,8 +499,9 @@ h1 {
     height: 120px;
     width: 120px;
     border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
-    background-color: rgba(89, 3, 95, 0.121);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
+    background-color: rgba(17, 25, 40, 0.25);
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
     font-size: 0.6em;
     display: flex;
     flex-direction: column;
@@ -486,7 +593,7 @@ h1 {
   }
   #portfolio-img img {
     height: 180px;
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.201);
     border-radius: 50%;
   }
   .resume-btn {
@@ -523,8 +630,9 @@ h1 {
     height: 140px;
     width: 140px;
     border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
-    background-color: rgba(89, 3, 95, 0.121);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
+    background-color: rgba(17, 25, 40, 0.25);
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
     font-size: 0.75em;
     display: flex;
     flex-direction: column;
@@ -616,7 +724,7 @@ h1 {
   }
   #portfolio-img img {
     height: 200px;
-    border: 4x solid white;
+    border: 4px solid rgba(255, 255, 255, 0.201);
     border-radius: 50%;
   }
   .resume-btn {
@@ -653,8 +761,9 @@ h1 {
     height: 150px;
     width: 150px;
     border-radius: 5px;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.103);
-    background-color: rgba(89, 3, 95, 0.121);
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
+    background-color: rgba(17, 25, 40, 0.25);
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
     font-size: 0.8em;
     display: flex;
     flex-direction: column;
