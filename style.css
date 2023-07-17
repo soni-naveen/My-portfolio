@@ -16,7 +16,7 @@
   letter-spacing: 0;
 }
 .white {
-  color: white;
+  color: whitesmoke;
 }
 h1 {
   font-size: 60px;
@@ -26,15 +26,13 @@ h1 {
   letter-spacing: 3px;
 }
 body {
-  background-color: #40034b;
+  background: linear-gradient(90deg,#151515,#301B3F);
   max-width: 2000px;
   margin: auto;
 }
 /* --------------------------------- Navbar & Introduction -------------------------------------- */
 
 #introduction {
-  height: 100%;
-  background-image: url("./images/background.svg");
   background-size: cover;
 }
 .navbar {
@@ -97,7 +95,7 @@ body {
 }
 #portfolio-img img {
   height: 280px;
-  border: 5px solid rgba(255, 255, 255, 0.201);
+  filter: drop-shadow(0px 0px 5px #b4a5a5);
   border-radius: 50%;
 }
 .resume-btn {
@@ -105,7 +103,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin-top: 40px;
-  background: linear-gradient(90deg, #8017c2, #fcfbfd84);
+  background: linear-gradient(90deg, #301B3F, #3C415C);
   padding: 8px 40px;
   font-size: 1.5rem;
   border-radius: 50px;
@@ -118,7 +116,6 @@ body {
 /*------------------------------------------- Skills --------------------------------------------- */
 
 #skills {
-  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
   padding: 60px 0;
 }
 .boxes {
@@ -134,42 +131,21 @@ body {
   width: 170px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
-  background-color: rgba(17, 25, 40, 0.25);
+  background-color: rgba(60, 65, 92, 0.301);
   filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 10px;
 }
 .img-h {
-  height: 10em;
-}
-.img-h-js {
-  padding-top: 12px;
-  margin-bottom: 20px;
-  height: 8.5em;
-}
-.img-h-git {
-  padding-top: 12px;
-  margin-bottom: 20px;
-  height: 9em;
-}
-.img-h-github {
-  border-radius: 50%;
-  margin-top: 15px;
-  margin-bottom: 5px;
   height: 8em;
-}
-.img-h-dbms {
-  height: 1.5em;
-  margin-top: 50px;
 }
 /*------------------------------------------ Projects -------------------------------------------- */
 
 #projects {
-  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
   padding: 60px 0;
 }
 .containers-box {
@@ -260,12 +236,10 @@ body {
 }
 /*----------------------------------------- Experience ------------------------------------------- */
 #experience {
-  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
   padding: 60px 0;
 }
 /*------------------------------------------ Contact --------------------------------------------- */
 #contact {
-  background: linear-gradient(#40034b, #3a2053 50%, #40034b 100%);
   padding: 60px 0;
 }
 /*---------------------------------------- Media Queries ------------------------------------------*/
@@ -331,7 +305,7 @@ body {
   }
   #portfolio-img img {
     height: 120px;
-    border: 3px solid rgba(255, 255, 255, 0.201);
+    filter: drop-shadow(0px 0px 5px #b4a5a5);
     border-radius: 50%;
   }
   .resume-btn {
@@ -339,7 +313,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 15px;
-    background: linear-gradient(90deg, #8017c2, #fcfbfd84);
+    background: linear-gradient(90deg, #301B3F, #3C415C);
     padding: 3px 25px;
     font-size: 0.8rem;
     border-radius: 50px;
@@ -369,37 +343,17 @@ body {
     width: 100px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
-    background-color: rgba(17, 25, 40, 0.25);
+    background-color: rgba(60, 65, 92, 0.301);;
     filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-    font-size: 0.5em;
+    font-size: 0.6em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10px;
   }
   .img-h {
-    height: 8em;
-  }
-  .img-h-js {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-git {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-github {
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    height: 7em;
-  }
-  .img-h-dbms {
-    height: 1em;
-    margin-top: 20px;
+    height: 6em;
   }
 }
 @media (min-width: 481px) and (max-width: 700px) {
@@ -462,7 +416,7 @@ body {
   }
   #portfolio-img img {
     height: 140px;
-    border: 3px solid rgba(255, 255, 255, 0.201);
+    filter: drop-shadow(0px 0px 5px #b4a5a5);
     border-radius: 50%;
   }
   .resume-btn {
@@ -470,7 +424,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background: linear-gradient(90deg, #8017c2, #fcfbfd84);
+    background: linear-gradient(90deg, #301B3F, #3C415C);
     padding: 3px 25px;
     font-size: 0.8rem;
     border-radius: 50px;
@@ -500,37 +454,17 @@ body {
     width: 120px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
-    background-color: rgba(17, 25, 40, 0.25);
+    background-color: rgba(60, 65, 92, 0.301);;
     filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-    font-size: 0.6em;
+    font-size: 0.7em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10px;
   }
   .img-h {
-    height: 8em;
-  }
-  .img-h-js {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-git {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-github {
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    height: 7em;
-  }
-  .img-h-dbms {
-    height: 1em;
-    margin-top: 20px;
+    height: 6em;
   }
 }
 @media (min-width: 701px) and (max-width: 960px) {
@@ -593,7 +527,7 @@ body {
   }
   #portfolio-img img {
     height: 180px;
-    border: 3px solid rgba(255, 255, 255, 0.201);
+    filter: drop-shadow(0px 0px 5px #b4a5a5);
     border-radius: 50%;
   }
   .resume-btn {
@@ -601,7 +535,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background: linear-gradient(90deg, #8017c2, #fcfbfd84);
+    background: linear-gradient(90deg, #301B3F, #3C415C);
     padding: 5px 30px;
     font-size: 0.9rem;
     border-radius: 50px;
@@ -631,37 +565,17 @@ body {
     width: 140px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
-    background-color: rgba(17, 25, 40, 0.25);
+    background-color: rgba(60, 65, 92, 0.301);;
     filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-    font-size: 0.75em;
+    font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10px;
   }
   .img-h {
-    height: 8em;
-  }
-  .img-h-js {
-    padding-top: 15px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-git {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-github {
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 5px;
     height: 7em;
-  }
-  .img-h-dbms {
-    height: 1em;
-    margin-top: 20px;
   }
 }
 @media (min-width: 961px) and (max-width: 1200px) {
@@ -724,7 +638,7 @@ body {
   }
   #portfolio-img img {
     height: 200px;
-    border: 4px solid rgba(255, 255, 255, 0.201);
+    filter: drop-shadow(0px 0px 5px #b4a5a5);
     border-radius: 50%;
   }
   .resume-btn {
@@ -732,7 +646,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background: linear-gradient(90deg, #8017c2, #fcfbfd84);
+    background: linear-gradient(90deg, #301B3F, #3C415C);
     padding: 5px 35px;
     font-size: 1rem;
     border-radius: 50px;
@@ -762,36 +676,16 @@ body {
     width: 150px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.103);
-    background-color: rgba(17, 25, 40, 0.25);
+    background-color: rgba(60, 65, 92, 0.301);;
     filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
-    font-size: 0.8em;
+    font-size: 0.9em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10px;
   }
   .img-h {
     height: 8em;
-  }
-  .img-h-js {
-    padding-top: 15px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-git {
-    padding-top: 12px;
-    margin-bottom: 20px;
-    height: 8em;
-  }
-  .img-h-github {
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    height: 7em;
-  }
-  .img-h-dbms {
-    height: 1em;
-    margin-top: 20px;
   }
 }
