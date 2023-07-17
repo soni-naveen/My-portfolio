@@ -16,7 +16,7 @@
   letter-spacing: 0;
 }
 .white {
-  color: whitesmoke;
+  color: white;
 }
 h1 {
   font-size: 60px;
@@ -58,6 +58,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar .right li a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
 }
 .navbar .left {
   list-style-type: none;
@@ -115,6 +119,9 @@ body {
 .social i {
   padding: 10px;
 }
+.social i:hover {
+  color: lightblue;
+}
 .resume-btn {
   display: flex;
   align-items: center;
@@ -125,6 +132,11 @@ body {
   font-size: 1.5rem;
   border-radius: 50px;
   border: none;
+}
+.resume-btn:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: #0f3460;
 }
 .resume-btn img {
   height: 20px;
@@ -314,7 +326,7 @@ body {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 40px);
     padding: 10px 15px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
   }
   .navbar .right {
