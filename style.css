@@ -127,8 +127,10 @@ body {
 
 #portfolio-img img {
   height: 280px;
-  filter: drop-shadow(0px 0px 7px #b4a5a5);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, #0f3460 100%);
+  filter: drop-shadow(0px 0px 5px #0F3460);
   border-radius: 50%;
+  border: 5px solid grey;
 }
 
 .social {
@@ -145,7 +147,8 @@ body {
 }
 
 .social i:hover {
-  color: #3282B8;
+  color: white;
+  filter: drop-shadow(0px 0px 25px white);
 }
 
 .resume-btn {
@@ -390,23 +393,39 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.mail-link{
+
+.mail-link {
+  font-size: 1.5em;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   grid-area: 1/1/2/2;
 }
-.mail-link a{
+
+.mail-link a:hover {
+  color: white;
+  filter: drop-shadow(0px 0px 25px white);
+}
+
+.mail-link img {
+  height: 25px;
+  margin: auto;
+}
+
+.mail-link a {
   text-decoration: none;
   display: flex;
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* #contact .social{
-  padding-top: 15px;
-} */
 
 /*---------------------------------------- Media Queries ------------------------------------------*/
+
+@media (max-width: 300px) {
+  .navbar{
+    font-size: 0.5rem !important;
+  }
+}
 
 @media (max-width: 480px) {
   .navbar {
@@ -472,8 +491,10 @@ body {
 
   #portfolio-img img {
     height: 120px;
-    filter: drop-shadow(0px 0px 7px #b4a5a5);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, #0f3460 100%);
+    filter: drop-shadow(0px 0px 5px #0F3460);
     border-radius: 50%;
+    border: 3px solid grey;
   }
 
   .social {
@@ -608,8 +629,10 @@ body {
 
   #portfolio-img img {
     height: 140px;
-    filter: drop-shadow(0px 0px 7px #b4a5a5);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, #0f3460 100%);
+    filter: drop-shadow(0px 0px 5px #0F3460);
     border-radius: 50%;
+    border: 3px solid grey;
   }
 
   .social {
@@ -744,8 +767,10 @@ body {
 
   #portfolio-img img {
     height: 180px;
-    filter: drop-shadow(0px 0px 7px #b4a5a5);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, #0f3460 100%);
+    filter: drop-shadow(0px 0px 5px #0F3460);
     border-radius: 50%;
+    border: 3px solid grey;
   }
 
   .social {
@@ -879,8 +904,10 @@ body {
 
   #portfolio-img img {
     height: 200px;
-    filter: drop-shadow(0px 0px 7px #b4a5a5);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, #0f3460 100%);
+    filter: drop-shadow(0px 0px 5px #0F3460);
     border-radius: 50%;
+    border: 4px solid grey;
   }
 
   .social {
