@@ -65,9 +65,15 @@
         <!---- introduction ---->
         <div class="intro white mainfont">
           <div id="introtext">
-            <p>
-              Hi, I'm Naveen Soni <br />
-              Welcome to My Portfolio
+            <p style="font-weight: bolder;">
+              <span class="auto-typed">
+                Hi, I'm Naveen Soni<br />
+                Welcome to My Portfolio
+              </span>
+              <span
+                class="typed-cursor typed-cursor--blink"
+                aria-hidden="true"
+              ></span>
             </p>
             <p id="smalltext">
               I'm a dedicated learner, learning Web technology in Full Stack and
@@ -79,7 +85,7 @@
               href="./images/Resume.pdf"
             >
               <button
-                style="color: rgba(255, 255, 255, 0.8)"
+                style="color: rgba(255, 255, 255, 0.5)"
                 class="resume-btn mainfont"
               >
                 <img src="./images/download.svg" alt="download" />
@@ -369,5 +375,13 @@
       src="https://kit.fontawesome.com/315d853545.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: ["Hi, I'm Naveen Soni <br> Welcome to My Portfolio"],
+        typeSpeed: 80,
+        loop: false,
+      });
+    </script>
   </body>
 </html>
