@@ -66,7 +66,7 @@
         <div class="intro white mainfont">
           <div id="introtext">
             <p style="font-weight: bolder">
-              <span class="auto-typed">
+              <span id="element">
                 Hi, I'm Naveen Soni<br />
                 Welcome to My Portfolio
               </span>
@@ -81,7 +81,7 @@
               href="./images/Resume.pdf"
             >
               <button
-                style="color: rgba(255, 255, 255, 0.5)"
+                style="color: rgba(255, 255, 255, 0.6)"
                 class="resume-btn mainfont"
               >
                 <img src="./images/download.svg" alt="download" />
@@ -91,6 +91,7 @@
           </div>
           <div id="portfolio-img">
             <img style="font-size: medium" src="./images/naveensoni.png" />
+            <div class="underline"></div>
             <div class="social">
               <a
                 style="text-decoration: none; color: rgba(255, 255, 255, 0.6)"
@@ -212,8 +213,8 @@
               <p>Sports and Events updates held at Chitkara University.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -223,8 +224,8 @@
               <p>Listen to the latest music on Soni Music Player.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -234,8 +235,8 @@
               <p>This calculater performs basic calculations.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -245,8 +246,8 @@
               <p>Student data converted into a attractive list.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -256,8 +257,8 @@
               <p>A tennis like game features two paddles and a ball.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -267,8 +268,8 @@
               <p>This is a single digit counter (input no: 1-9).</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -278,8 +279,8 @@
               <p>Switching of light to dark mode & vice-versa.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
           <div class="container">
@@ -289,8 +290,8 @@
               <p>Sports and Events updates held at Chitkara University.</p>
             </div>
             <div class="button-wrapper">
-              <button class="btn outline">CODE</button>
-              <button class="btn fill">VISIT</button>
+              <a href="#"><button class="btn outline">CODE</button></a>
+              <a href="#"><button class="btn fill">VISIT</button></a>
             </div>
           </div>
         </div>
@@ -299,6 +300,44 @@
     <!------------------------- Achievements -------------------------->
     <section id="achievements">
       <h1 class="white mainfont">ACHIEVEMENTS</h1>
+      <main>
+        <div class="achieves">
+          <div class="left-ach white otherfont">
+            <div class="date">Nov 2021</div>
+            <div class="date">Jan 2022</div>
+            <div class="date">Feb 2022</div>
+            <div class="date">Sep 2022</div>
+            <div class="date">Mar 2023</div>
+          </div>
+          <div class="right-ach mainfont">
+            <div class="achieve">
+              <div class="h-achieve">Coding Ninjas Certification</div>
+              <p>Python - Certificate of Excellence</p>
+            </div>
+            <div class="achieve">
+              <div class="h-achieve">Google Developer Student Clubs</div>
+              <p>Android Study Jams Certificate</p>
+            </div>
+            <div class="achieve">
+              <div class="h-achieve">Cisco Network Academy</div>
+              <p>
+                Introduction to CyberSecurity Certificate
+              </p>
+            </div>
+            <div class="achieve">
+              <div class="h-achieve">Coding Ninjas Certification</div>
+              <p>C++ OOPS - Certificate of Excellence</p>
+            </div>
+            <div class="achieve">
+              <div class="h-achieve">NPTEL Certification & Appreciation</div>
+              <p>
+                Value added course certificate & Appreciation from Chitkara
+                University
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
     </section>
     <!--------------------------- Contact ----------------------------->
     <footer id="contact">
@@ -306,17 +345,21 @@
         Let's Work Together !
       </h1>
       <main>
-        <form>
+        <form
+          action="mailto:naveen.soni.1@outlook.com"
+          method="post"
+          enctype="text/plain"
+        >
           <div class="msg-box">
             <input type="text" placeholder="Full Name" required />
             <input type="email" placeholder="E-mail" required />
             <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">SEND</button>
+            <button class="form-button" type="submit">SEND</button>
           </div>
         </form>
         <div class="line"></div>
         <div class="footer-container">
-          <div class="left-footer">
+          <div class="left-footer mainfont">
             <p class="name mainfont">Naveen Soni</p>
             <p class="address-1">Chitkara University</p>
             <p class="address-2" style="line-height: 1.7em">
@@ -327,11 +370,7 @@
               <img src="./images/mail.svg" />&nbsp;Mail
             </a>
           </div>
-          <div
-            class="copyright"
-            style="font-family: sans-serif"
-            class="copyright white"
-          >
+          <div class="copyright" style="font-family: sans-serif">
             &copy 2023 Naveen Soni. All rights reserved.
           </div>
           <div class="social">
@@ -363,17 +402,22 @@
         </div>
       </main>
     </footer>
+
     <script
       src="https://kit.fontawesome.com/315d853545.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed(".auto-typed", {
+      var typed = new Typed("#element", {
         strings: ["Hi, I'm Naveen Soni <br> Welcome to My Portfolio"],
-        typeSpeed: 80,
-        loop: false,
+        typeSpeed: 60,
       });
     </script>
+    <style>
+      .typed-cursor {
+        opacity: 0;
+      }
+    </style>
   </body>
 </html>
