@@ -313,23 +313,36 @@
           <div class="date d5">Mar 2023</div>
           <div class="achieve a1">
             <div class="h-achieve">Coding Ninjas certification</div>
-            <p><img src="./images/arrow-right.svg"> Python - certificate of excellence</p>
+            <p>
+              <img src="./images/arrow-right.svg" /> Python - certificate of
+              excellence
+            </p>
           </div>
           <div class="achieve a2">
             <div class="h-achieve">Google Developer Student Clubs</div>
-            <p><img src="./images/arrow-right.svg"> Android Study Jams Certificate</p>
+            <p>
+              <img src="./images/arrow-right.svg" /> Android Study Jams
+              Certificate
+            </p>
           </div>
           <div class="achieve a3">
             <div class="h-achieve">Cisco Academy certification</div>
-            <p><img src="./images/arrow-right.svg"> Introduction to CyberSecurity Certificate</p>
+            <p>
+              <img src="./images/arrow-right.svg" /> Introduction to
+              CyberSecurity Certificate
+            </p>
           </div>
           <div class="achieve a4">
             <div class="h-achieve">Coding Ninjas certification</div>
-            <p><img src="./images/arrow-right.svg"> C++ OOPS - certificate of excellence</p>
+            <p>
+              <img src="./images/arrow-right.svg" /> C++ OOPS - certificate of
+              excellence
+            </p>
           </div>
           <div class="achieve a5">
             <div class="h-achieve">NPTEL certification & appreciation</div>
-            <p><img src="./images/arrow-right.svg"> 
+            <p>
+              <img src="./images/arrow-right.svg" />
               Fundamental Algorithms: Design & Analysis
             </p>
           </div>
@@ -342,18 +355,35 @@
         Let's Work Together !
       </h1>
       <main>
-        <form
-          action="mailto:naveen.soni.1@outlook.com"
-          method="post"
-          enctype="text/plain"
-        >
+        <form name="submit-to-google-sheet">
           <div class="msg-box">
-            <input type="text" placeholder="Full Name" required />
-            <input type="email" placeholder="E-mail" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button class="form-button" type="submit">SEND</button>
+            <input type="text" placeholder="Full Name" name="Name" required />
+            <input type="email" placeholder="E-mail" name="E-mail" required />
+            <textarea
+              placeholder="Your Message"
+              name="Message"
+              required
+            ></textarea>
+            <input class="form-button" type="submit" value="SEND" />
           </div>
+          <span id="success"></span>
         </form>
+        <script>
+          const scriptURL =
+            "https://script.google.com/macros/s/AKfycbz8qOzPnJsPD_Pl2bMDF2ZCgOf6WQn1_yXByNabnSuLPPxOacUVLtLlOxr6SqaYyBaYSg/exec";
+          const form = document.forms["submit-to-google-sheet"];
+          const success = document.getElementById("success");
+
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+              .then((response) => {
+                window.alert("Data successfully submitted");
+                form.reset();
+              })
+              .catch((error) => console.error("Error!", error.message));
+          });
+        </script>
         <div class="line"></div>
         <div class="footer-container">
           <div class="left-footer mainfont">
