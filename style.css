@@ -15,7 +15,7 @@
 }
 .white {
   color: white;
-}
+} 
 h1 {
   font-size: 60px;
   margin-top: -1px;
@@ -632,7 +632,7 @@ textarea {
     font-size: 0.8em;
   }
   .achieve p {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .achieve p img {
     height: 6px;
