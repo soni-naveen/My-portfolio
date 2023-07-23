@@ -72,7 +72,7 @@ body {
   gap: 0.5rem;
 }
 .line {
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   width: 90%;
   margin: auto;
 }
@@ -634,7 +634,7 @@ textarea {
   .achieve p {
     font-size: 0.6em;
   }
-  .achieve p img{
+  .achieve p img {
     height: 6px;
   }
   .msg-box {
@@ -848,7 +848,7 @@ textarea {
   .achieve p {
     font-size: 0.8em;
   }
-  .achieve p img{
+  .achieve p img {
     height: 9px;
   }
   #contact {
@@ -1069,7 +1069,7 @@ textarea {
   .achieve p {
     font-size: 0.9em;
   }
-  .achieve p img{
+  .achieve p img {
     height: 10px;
   }
   .msg-box {
@@ -1265,7 +1265,7 @@ textarea {
   .achieve p {
     font-size: 1em;
   }
-  .achieve p img{
+  .achieve p img {
     height: 12px;
   }
   .msg-box {
