@@ -105,7 +105,7 @@ body {
 #smalltext {
   display: flex;
   padding-top: 20px;
-  color: white;
+  color: whitesmoke;
   font-size: 0.4em;
   font-family: "Poppins", sans-serif;
 }
@@ -584,7 +584,7 @@ textarea {
     display: flex;
     padding-top: 10px;
     width: 80%;
-    color: rgba(255, 255, 255, 0.4);
+    color: whitesmoke;
     font-size: 0.4em;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -805,7 +805,7 @@ textarea {
   #smalltext {
     display: flex;
     padding-top: 15px;
-    color: rgba(255, 255, 255, 0.4);
+    color: whitesmoke;
     font-size: 0.4em;
     font-family: "Poppins", sans-serif;
   }
@@ -1029,7 +1029,7 @@ textarea {
   #smalltext {
     display: flex;
     padding-top: 15px;
-    color: rgba(255, 255, 255, 0.4);
+    color: whitesmoke;
     font-size: 0.4em;
     width: 80%;
     font-family: "Poppins", sans-serif;
@@ -1231,7 +1231,7 @@ textarea {
   #smalltext {
     display: flex;
     padding-top: 15px;
-    color: rgba(255, 255, 255, 0.4);
+    color: whitesmoke;
     font-size: 0.4em;
     width: 80%;
     font-family: "Poppins", sans-serif;
