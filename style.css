@@ -24,7 +24,7 @@ h1 {
   letter-spacing: 2px;
 }
 .subheading {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: -1px;
   text-align: center;
 }
@@ -161,9 +161,7 @@ body {
 
 #skills {
   padding: 50px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(4, 1, 27, 0.8)),
-    url(./images/background1.jpg);
-  background-size: cover;
+  background: linear-gradient(black 0%, #16213e 60%, black 100%);
 }
 #skills main {
   max-width: 2000px;
@@ -181,8 +179,7 @@ body {
 .box {
   height: 170px;
   width: 170px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 1px rgba(173, 216, 230, 0.3);
+  box-shadow: 0px 0px 7px 1px rgba(173, 216, 230, 0.3);
   background-color: rgba(173, 216, 230, 0.1);
   font-size: 0.9em;
   display: flex;
@@ -198,7 +195,14 @@ body {
 
 #projects {
   padding: 50px 0;
-  /* background-color: #dark; */
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(4, 1, 27, 0.5),
+      rgba(0, 0, 0)
+    ),
+    url(./images/background1.jpg);
+  background-size: cover;
 }
 #projects main {
   max-width: 2000px;
@@ -216,15 +220,18 @@ body {
   padding: 60px;
 }
 .container {
-  background-color: #16213e;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(32, 55, 97, 0.2);
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   border-radius: 5px;
-  box-shadow: 0px 0px 7px 2px rgba(128, 128, 128, 0.7);
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .wrapper {
   width: 220px;
@@ -239,7 +246,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.255);
 }
 .img1 {
-  background-image: url(./images/project-image.png);
+  background-image: url(./images/sportistan.png);
 }
 .img2 {
   background-image: url(./images/musicplayer.png);
@@ -260,7 +267,7 @@ body {
   background-image: url(./images/toggleview.png);
 }
 .img8 {
-  background-image: url(./images/project-image.png);
+  background-image: url(./images/sportistan.png);
 }
 .wrapper h1 {
   font-family: "Titillium Web", sans-serif;
@@ -291,19 +298,19 @@ body {
 }
 .outline {
   background: transparent;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
 }
 .outline:hover {
   transform: scale(1.125);
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   border-color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
 }
 .fill {
-  background: #0f4c75;
-  color: rgba(255, 255, 255, 0.95);
+  background: #125e91;
+  color: white;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -316,7 +323,14 @@ body {
 
 #achievements {
   padding: 50px 0;
-  background: linear-gradient(black, #16213E, black);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0),
+      rgba(4, 1, 27, 0.8),
+      rgba(0, 0, 0)
+    ),
+    url(./images/background4.jpg);
+  background-size: cover;
 }
 #achievements main {
   max-width: 2000px;
@@ -394,7 +408,7 @@ body {
       to top,
       rgba(0, 0, 0, 0.9) 0,
       rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.9) 100%
+      rgba(0, 0, 0) 100%
     ),
     url(./images/background3.jpg);
   background-size: cover;
@@ -417,8 +431,8 @@ form {
   margin-top: 70px;
   margin-bottom: 70px;
   padding: 70px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
-  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
   border-bottom: none;
 }
 input,
@@ -427,7 +441,7 @@ textarea {
   min-width: 20em;
   width: 60%;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Titillium Web", sans-serif;
   background-color: transparent;
   border: none;
@@ -439,7 +453,7 @@ textarea {
   height: 120px;
 }
 ::placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.4);
 }
 .form-button {
   all: unset;
@@ -464,12 +478,12 @@ textarea {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 .name {
   padding-top: 20px;
   font-size: 30px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 0.9);
   letter-spacing: 0px;
 }
 .address-1 {
@@ -491,7 +505,7 @@ textarea {
   font-size: 23px;
   padding-top: 10px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 0.8);
   display: flex;
 }
 .left-footer a:hover {
@@ -608,14 +622,14 @@ textarea {
     padding-right: 7px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: -1px;
     padding-top: 30px;
     text-align: center;
     letter-spacing: 3px;
   }
   .subheading {
-    font-size: 9px;
+    font-size: 12px;
     margin-top: -1px;
     text-align: center;
   }
@@ -656,13 +670,13 @@ textarea {
   .msg-box {
     margin-top: 50px;
     padding: 30px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px;
   }
   input,
   textarea {
-    width: 100%;
-    max-width: 18em;
-    font-size: 0.5em;
+    width: 70%;
+    min-width: 10em;
+    font-size: 0.6em;
     margin-bottom: 20px;
   }
   textarea {
@@ -671,7 +685,7 @@ textarea {
   .form-button {
     font-size: 0.4em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 3px 15px;
+    padding: 4px 17px;
     border-radius: 30px;
   }
   .footer-container {
@@ -681,7 +695,6 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.4);
   }
   .name {
     padding-top: 20px;
@@ -739,6 +752,18 @@ textarea {
   }
   .footer-container .social a {
     padding: 3px;
+  }
+  #skills {
+    padding: 20px 0;
+  }
+  #projects {
+    padding: 20px 0;
+  }
+  #achievements {
+    padding: 20px 0;
+  }
+  #contact {
+    padding: 20px 0;
   }
 }
 @media (min-width: 481px) and (max-width: 700px) {
@@ -822,7 +847,7 @@ textarea {
     padding-right: 7px;
   }
   h1 {
-    font-size: 25px;
+    font-size: 28px;
     margin-top: -1px;
     padding-top: 30px;
     text-align: center;
@@ -875,13 +900,13 @@ textarea {
   .msg-box {
     margin-top: 50px;
     padding: 50px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px;
   }
   input,
   textarea {
     width: 80%;
     max-width: 18em;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-bottom: 30px;
   }
   textarea {
@@ -890,7 +915,7 @@ textarea {
   .form-button {
     font-size: 0.5em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 4px 21px;
+    padding: 6px 21px;
     border-radius: 30px;
   }
   .footer-container {
@@ -900,7 +925,6 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.4);
   }
   .name {
     padding-top: 20px;
@@ -958,6 +982,18 @@ textarea {
   }
   .footer-container .social a {
     padding: 3px;
+  }
+  #skills {
+    padding: 30px 0;
+  }
+  #projects {
+    padding: 30px 0;
+  }
+  #achievements {
+    padding: 30px 0;
+  }
+  #contact {
+    padding: 30px 0;
   }
 }
 @media (min-width: 701px) and (max-width: 960px) {
@@ -1043,14 +1079,14 @@ textarea {
     margin: 0 5%;
   }
   h1 {
-    font-size: 30px;
+    font-size: 32px;
     margin-top: -1px;
     padding-top: 30px;
     text-align: center;
     letter-spacing: 3px;
   }
   .subheading {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: -1px;
     text-align: center;
   }
@@ -1091,13 +1127,13 @@ textarea {
   .msg-box {
     margin-top: 50px;
     padding: 50px;
-    border-radius: 40px 40px 0 0;
+    border-radius: 25px;
   }
   input,
   textarea {
     width: 70%;
     max-width: 20em;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 40px;
   }
   textarea {
@@ -1106,7 +1142,7 @@ textarea {
   .form-button {
     font-size: 0.6em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 5px 25px;
+    padding: 7px 25px;
     border-radius: 30px;
   }
   .name {
@@ -1154,6 +1190,18 @@ textarea {
   }
   .footer-container .social a {
     padding: 5px;
+  }
+  #skills {
+    padding: 35px 0;
+  }
+  #projects {
+    padding: 35px 0;
+  }
+  #achievements {
+    padding: 35px 0;
+  }
+  #contact {
+    padding: 35px 0;
   }
 }
 @media (min-width: 961px) and (max-width: 1200px) {
@@ -1246,7 +1294,7 @@ textarea {
     letter-spacing: 3px;
   }
   .subheading {
-    font-size: 17px;
+    font-size: 20px;
     margin-top: -1px;
     text-align: center;
   }
@@ -1287,13 +1335,13 @@ textarea {
   .msg-box {
     margin-top: 50px;
     padding: 60px;
-    border-radius: 60px 60px 0 0;
+    border-radius: 30px;
   }
   input,
   textarea {
     width: 60%;
     max-width: 20em;
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-bottom: 50px;
   }
   textarea {
@@ -1302,7 +1350,7 @@ textarea {
   .form-button {
     font-size: 0.8em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 7px 30px;
+    padding: 8px 30px;
     border-radius: 30px;
   }
   .name {
@@ -1350,6 +1398,18 @@ textarea {
   }
   .footer-container .social a {
     padding: 6px;
+  }
+  #skills {
+    padding: 40px 0;
+  }
+  #projects {
+    padding: 40px 0;
+  }
+  #achievements {
+    padding: 40px 0;
+  }
+  #contact {
+    padding: 40px 0;
   }
 }
 @media (min-width: 1500px) {
