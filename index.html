@@ -379,22 +379,18 @@
             ></textarea>
             <input class="form-button" type="submit" value="SEND" />
           </div>
-          <span id="success"></span>
         </form>
         <script>
           const scriptURL =
             "https://script.google.com/macros/s/AKfycbz8qOzPnJsPD_Pl2bMDF2ZCgOf6WQn1_yXByNabnSuLPPxOacUVLtLlOxr6SqaYyBaYSg/exec";
           const form = document.forms["submit-to-google-sheet"];
-          const success = document.getElementById("success");
 
-          form.addEventListener("submit", (e) => {
+          form.addEventListener("submit", e => {
             e.preventDefault();
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
-              .then((response) => {
-                window.alert("Data successfully submitted");
-                form.reset();
-              })
+              .then((response) => {form.reset()})
               .catch((error) => console.error("Error!", error.message));
+              alert("Thankyou for contacting me!");
           });
         </script>
         <div class="line"></div>
