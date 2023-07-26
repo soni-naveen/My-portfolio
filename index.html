@@ -358,6 +358,7 @@
         <form name="submit-to-google-sheet">
           <div class="msg-box">
             <input
+              id="form-name"
               type="text"
               placeholder="Full Name"
               name="Name"
@@ -365,6 +366,7 @@
               required
             />
             <input
+              id="form-email"
               type="email"
               placeholder="E-mail"
               name="E-mail"
@@ -372,6 +374,7 @@
               required
             />
             <textarea
+              id="form-message"
               placeholder="Your Message"
               name="Message"
               autocomplete="off"
@@ -385,11 +388,14 @@
             "https://script.google.com/macros/s/AKfycbz8qOzPnJsPD_Pl2bMDF2ZCgOf6WQn1_yXByNabnSuLPPxOacUVLtLlOxr6SqaYyBaYSg/exec";
           const form = document.forms["submit-to-google-sheet"];
 
-          form.addEventListener("submit", e => {
+          form.addEventListener("submit", (e) => {
             e.preventDefault();
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
-              .then((response) => {form.reset()})
+              .then((response) => console.log("Success!", response))
               .catch((error) => console.error("Error!", error.message));
+              document.getElementById("form-name").value = "";
+              document.getElementById("form-email").value = "";
+              document.getElementById("form-message").value = "";
               alert("Thankyou for contacting me!");
           });
         </script>
