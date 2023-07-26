@@ -393,18 +393,18 @@
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
               .then((response) => console.log("Success!", response))
               .catch((error) => console.error("Error!", error.message));
-              document.getElementById("form-name").value = "";
-              document.getElementById("form-email").value = "";
-              document.getElementById("form-message").value = "";
-              alert("Thankyou for contacting me!");
+            document.getElementById("form-name").value = "";
+            document.getElementById("form-email").value = "";
+            document.getElementById("form-message").value = "";
+            alert("Thankyou for contacting me!");
           });
         </script>
         <div class="line"></div>
         <div class="footer-container">
           <div class="left-footer mainfont">
-            <p class="name mainfont">Naveen Soni</p>
-            <p class="address-1">Chitkara University</p>
-            <p class="address-2" style="line-height: 1.7em">
+            <p class="name">Naveen Soni</p>
+            <p class="address-1 otherfont">Chitkara University</p>
+            <p class="address-2 otherfont" style="line-height: 1.7em">
               Chandigarh-Patiala National Highway(NH-64) Village Jansla,
               Rajpura, Punjab 140401
             </p>
@@ -412,9 +412,7 @@
               <img src="./images/mail.svg" />&nbsp;Mail
             </a>
           </div>
-          <div class="copyright" style="font-family: sans-serif">
-            &copy 2023 Naveen Soni. All rights reserved.
-          </div>
+          <div class="home otherfont"><a href="#introduction">HOME</a></div>
           <div class="social">
             <a
               style="color: rgba(255, 255, 255, 0.8)"

@@ -47,7 +47,7 @@ body {
   background-size: cover;
 }
 #introduction main {
-  max-width: 2000px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,7 +74,7 @@ body {
 .navbar .left {
   color: #bbe1fa;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 16px;
   grid-area: 1/1/2/3;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
   gap: 0.5rem;
 }
 .line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid white;
   width: 90%;
   margin: auto;
 }
@@ -167,7 +167,7 @@ body {
   background: linear-gradient(black 0%, #16213e 60%, black 100%);
 }
 #skills main {
-  max-width: 2000px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,7 +208,7 @@ body {
   background-size: cover;
 }
 #projects main {
-  max-width: 2000px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -336,7 +336,7 @@ body {
   background-size: cover;
 }
 #achievements main {
-  max-width: 2000px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -416,7 +416,7 @@ body {
   background-size: cover;
 }
 #contact main {
-  max-width: 2000px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -443,7 +443,7 @@ textarea {
   min-width: 20em;
   width: 60%;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: "Titillium Web", sans-serif;
   background-color: transparent;
   border: none;
@@ -489,11 +489,13 @@ textarea {
   letter-spacing: 0px;
 }
 .address-1 {
+  color: white !important;
   padding-top: 10px;
   font-size: 20px;
 }
 .address-2 {
-  width: 85%;
+  color: white !important;
+  width: 90%;
   font-size: 15px;
 }
 .left-footer {
@@ -504,10 +506,11 @@ textarea {
   grid-area: 1/1/3/2;
 }
 .left-footer a {
+  font-family: "Poppins", sans-serif;
   font-size: 23px;
   padding-top: 10px;
   text-decoration: none;
-  color: rgb(255, 255, 255, 0.8);
+  color: white;
   display: flex;
 }
 .left-footer a:hover {
@@ -518,13 +521,21 @@ textarea {
   height: 23px;
   margin: auto;
 }
-.copyright {
-  font-size: 15px;
+.home {
+  font-size: 25px;
   grid-area: 2/3/3/4;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
+  padding-right: 20px;
   align-items: center;
+}
+.home a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.home a:hover {
+  color: white;
+  text-decoration: underline;
 }
 .footer-container .social {
   grid-area: 1/3/2/4;
@@ -601,8 +612,11 @@ textarea {
     height: 120px;
     filter: drop-shadow(5px 5px 40px #0f3460);
   }
+  .underline {
+    width: 4.8em;
+  }
   .social {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-top: 20px;
   }
   .social i {
@@ -664,47 +678,47 @@ textarea {
     height: 6px;
   }
   .msg-box {
+    width: 70%;
     margin-top: 50px;
     padding: 30px;
     border-radius: 15px;
   }
   input,
   textarea {
-    width: 70%;
-    min-width: 12em;
-    font-size: 0.6em;
+    width: 80%;
+    min-width: 13em;
+    font-size: 0.8em;
     margin-bottom: 20px;
   }
   textarea {
     height: 50px;
   }
   .form-button {
-    font-size: 0.4em;
+    font-size: 0.6em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 4px 17px;
+    padding: 5px 20px;
     border-radius: 30px;
   }
   .footer-container {
-    width: 88%;
     margin: auto;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr 50px;
     grid-template-columns: repeat(2, 1fr);
     text-decoration: none;
   }
   .name {
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(255, 255, 255);
     letter-spacing: 0px;
   }
   .address-1 {
     padding-top: 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .address-2 {
-    width: 60%;
-    font-size: 9px;
+    width: 85%;
+    font-size: 10px;
     line-height: 12px;
     text-align: center;
   }
@@ -716,7 +730,7 @@ textarea {
     align-items: center;
   }
   .left-footer a {
-    font-size: 13px;
+    font-size: 16px;
     padding-top: 8px;
     text-decoration: none;
     color: rgba(255, 255, 255);
@@ -727,15 +741,15 @@ textarea {
     filter: drop-shadow(0px 0px 25px white);
   }
   .left-footer img {
-    height: 13px;
+    height: 16px;
     margin: auto;
   }
-  .copyright {
-    font-size: 7px;
-    grid-area: 2/1/3/3;
+  .home {
+    font-size: 15px;
+    padding-right: 0;
+    grid-area: 3/1/4/3;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 17px;
   }
@@ -888,6 +902,7 @@ textarea {
     background-color: #1a1a2e;
   }
   .msg-box {
+    width: 67%;
     margin-top: 50px;
     padding: 50px;
     border-radius: 20px;
@@ -897,39 +912,38 @@ textarea {
     width: 80%;
     min-width: 14em;
     max-width: 18em;
-    font-size: 0.8em;
+    font-size: 1.1em;
     margin-bottom: 30px;
   }
   textarea {
     height: 50px;
   }
   .form-button {
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 6px 21px;
+    padding: 7px 21px;
     border-radius: 30px;
   }
   .footer-container {
-    width: 88%;
     margin: auto;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.5fr 50px;
     grid-template-columns: repeat(2, 1fr);
     text-decoration: none;
   }
   .name {
     padding-top: 20px;
-    font-size: 17px;
+    font-size: 20px;
     color: rgba(255, 255, 255);
     letter-spacing: 0px;
   }
   .address-1 {
     padding-top: 6px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .address-2 {
-    width: 60%;
-    font-size: 10px;
+    width: 75%;
+    font-size: 11px;
     text-align: center;
     line-height: 12px;
   }
@@ -941,7 +955,7 @@ textarea {
     align-items: center;
   }
   .left-footer a {
-    font-size: 13px;
+    font-size: 16px;
     padding-top: 8px;
     text-decoration: none;
     color: rgba(255, 255, 255);
@@ -952,15 +966,15 @@ textarea {
     filter: drop-shadow(0px 0px 25px white);
   }
   .left-footer img {
-    height: 13px;
+    height: 16px;
     margin: auto;
   }
-  .copyright {
-    font-size: 9px;
-    grid-area: 2/1/3/3;
+  .home {
+    font-size: 15px;
+    padding-right: 0;
+    grid-area: 3/1/4/3;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 17px;
   }
@@ -1110,42 +1124,43 @@ textarea {
     height: 10px;
   }
   .msg-box {
+    width: 65%;
     margin-top: 50px;
     padding: 50px;
     border-radius: 25px;
   }
   input,
   textarea {
-    width: 70%;
-    max-width: 20em;
-    font-size: 1em;
+    width: 75%;
+    min-width: 15em;
+    font-size: 1.2em;
     margin-bottom: 40px;
   }
   textarea {
     height: 50px;
   }
   .form-button {
-    font-size: 0.6em;
+    font-size: 0.9em;
     color: rgba(255, 255, 255, 0.7);
     padding: 7px 25px;
     border-radius: 30px;
   }
   .name {
     padding-top: 12px;
-    font-size: 20px;
+    font-size: 22px;
     color: rgba(255, 255, 255);
     letter-spacing: 0px;
   }
   .address-1 {
     padding-top: 6px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .address-2 {
     width: 90%;
     font-size: 11px;
   }
   .left-footer a {
-    font-size: 15px;
+    font-size: 17px;
     padding-top: 8px;
     text-decoration: none;
     color: rgba(255, 255, 255);
@@ -1156,11 +1171,11 @@ textarea {
     filter: drop-shadow(0px 0px 25px white);
   }
   .left-footer img {
-    height: 15px;
+    height: 17px;
     margin: auto;
   }
-  .copyright {
-    font-size: 10px;
+  .home {
+    font-size: 17px;
     grid-area: 2/3/3/4;
     display: flex;
     justify-content: flex-end;
@@ -1320,21 +1335,21 @@ textarea {
   textarea {
     width: 60%;
     max-width: 20em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 50px;
   }
   textarea {
     height: 80px;
   }
   .form-button {
-    font-size: 0.8em;
+    font-size: 1em;
     color: rgba(255, 255, 255, 0.7);
-    padding: 8px 30px;
+    padding: 9px 30px;
     border-radius: 30px;
   }
   .name {
     padding-top: 15px;
-    font-size: 23px;
+    font-size: 25px;
     color: rgba(255, 255, 255);
     letter-spacing: 0px;
   }
@@ -1343,11 +1358,11 @@ textarea {
     font-size: 16px;
   }
   .address-2 {
-    width: 85%;
+    width: 90%;
     font-size: 12px;
   }
   .left-footer a {
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 10px;
     text-decoration: none;
     color: rgba(255, 255, 255);
@@ -1358,11 +1373,11 @@ textarea {
     filter: drop-shadow(0px 0px 25px white);
   }
   .left-footer img {
-    height: 18px;
+    height: 20px;
     margin: auto;
   }
-  .copyright {
-    font-size: 13px;
+  .home {
+    font-size: 20px;
     grid-area: 2/3/3/4;
     display: flex;
     justify-content: flex-end;
@@ -1394,5 +1409,8 @@ textarea {
 @media (min-width: 1500px) {
   .navbar {
     font-size: 1.3rem;
+  }
+  .navbar .left{
+    font-size: 1rem;
   }
 }
