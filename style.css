@@ -82,7 +82,7 @@ body {
   gap: 0.5rem;
 }
 .line {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   width: 90%;
   margin: auto;
 }
