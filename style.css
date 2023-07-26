@@ -130,7 +130,7 @@ body {
   margin-top: 20px;
 }
 .social:hover {
-  cursor: pointer;
+  cursor: default;
 }
 .social i {
   padding: 10px;
