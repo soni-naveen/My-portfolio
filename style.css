@@ -39,7 +39,7 @@ body {
 #introduction {
   background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0) 60%,
       rgba(0, 0, 0, 0.8) 100%
     ),
@@ -102,6 +102,9 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+#introtext > p > span {
+  font-weight: 600;
+}
 #smalltext {
   display: flex;
   padding-top: 20px;
@@ -145,7 +148,7 @@ body {
   justify-content: flex-start;
   margin-top: 40px;
   background-color: rgba(15, 51, 96, 0.6);
-  padding: 8px 40px;
+  padding: 7px 35px;
   font-size: 1.5rem;
   border-radius: 50px;
   border: none;
@@ -366,7 +369,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 3em;
+  font-size: 3.1em;
   padding: 1em;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -628,7 +631,7 @@ textarea {
     justify-content: flex-start;
     margin-top: 15px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 3px 25px;
+    padding: 3px 15px;
     font-size: 0.8rem;
     border-radius: 50px;
     border: none;
@@ -666,10 +669,10 @@ textarea {
     height: 5em;
   }
   .date {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .h-achieve {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .achieve p {
     font-size: 0.5em;
@@ -847,13 +850,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 3px 25px;
+    padding: 3px 17px;
     font-size: 0.8rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 10px;
+    height: 11px;
     padding-right: 7px;
   }
   h1 {
@@ -1071,13 +1074,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 5px 30px;
+    padding: 5px 20px;
     font-size: 0.9rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 10px;
+    height: 13px;
     padding-right: 8px;
   }
   .containers-box {
@@ -1274,13 +1277,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 5px 35px;
-    font-size: 1rem;
+    padding: 5px 25px;
+    font-size: 1.1rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 12px;
+    height: 15px;
     padding-right: 7px;
   }
   .containers-box {
@@ -1410,7 +1413,7 @@ textarea {
   .navbar {
     font-size: 1.3rem;
   }
-  .navbar .left{
+  .navbar .left {
     font-size: 1rem;
   }
 }
