@@ -246,7 +246,9 @@ body {
 }
 .banner-image {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
   height: 200px;
   width: 100%;
   border-radius: 5px;
