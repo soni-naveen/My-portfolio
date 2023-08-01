@@ -616,7 +616,7 @@ textarea {
     padding-top: 0px;
   }
   #portfolio-img img {
-    height: 120px;
+    height: 150px;
     filter: drop-shadow(5px 5px 40px #0f3460);
   }
   .underline {
@@ -838,7 +838,7 @@ textarea {
     padding-top: 0px;
   }
   #portfolio-img img {
-    height: 160px;
+    height: 180px;
     filter: drop-shadow(8px 8px 45px #0f3460);
   }
   .social {
@@ -1062,7 +1062,7 @@ textarea {
     align-items: center;
   }
   #portfolio-img img {
-    height: 180px;
+    height: 200px;
     filter: drop-shadow(8px 8px 45px #0f3460);
   }
   .social {
@@ -1265,7 +1265,7 @@ textarea {
     align-items: center;
   }
   #portfolio-img img {
-    height: 200px;
+    height: 230px;
     filter: drop-shadow(10px 10px 50px #0f3460);
   }
   .social {
