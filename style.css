@@ -14,7 +14,7 @@
   letter-spacing: 1px;
 }
 .otherfont {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
 }
 .white {
@@ -41,9 +41,9 @@ body {
 #introduction {
   background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.8) 100%
+      rgba(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.7) 100%
     ),
     url(./images/background2.jpg);
   background-size: cover;
@@ -71,7 +71,7 @@ body {
 }
 .navbar .right li a:hover {
   cursor: pointer;
-  color: #75c2f6 !important;
+  color: #bbe1fa !important;
 }
 .navbar .left {
   color: #bbe1fa;
@@ -82,6 +82,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+.navbar div li a {
+  position: relative;
+}
+.navbar div li a:after { 
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  background: #bbe1fa;
+  transition: 0.3s ease 0s;
+}
+.navbar div li a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
@@ -111,8 +128,9 @@ body {
   display: flex;
   padding-top: 20px;
   color: whitesmoke;
-  font-size: 0.4em;
-  font-family: "Poppins", sans-serif;
+  font-size: 0.3em;
+  line-height: 1.7em;
+  font-family: "Open Sans", sans-serif;
 }
 #portfolio-img {
   grid-area: 1/7/4/8;
@@ -128,7 +146,7 @@ body {
 }
 .underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  width: 4em;
+  width: 3.3em;
 }
 .social {
   font-size: 2.5rem;
@@ -142,7 +160,6 @@ body {
 }
 .social i:hover {
   color: white;
-  filter: drop-shadow(0px 0px 25px white);
 }
 .resume-btn {
   display: flex;
@@ -150,8 +167,8 @@ body {
   justify-content: flex-start;
   margin-top: 40px;
   background-color: rgba(15, 51, 96, 0.6);
-  padding: 7px 35px;
-  font-size: 1.5rem;
+  padding: 7px 30px;
+  font-size: 1.2rem;
   border-radius: 50px;
   border: none;
 }
@@ -162,7 +179,7 @@ body {
   background-color: rgba(15, 51, 96, 0.9);
 }
 .resume-btn img {
-  height: 20px;
+  height: 1.2rem;
   padding-right: 10px;
 }
 /*------------------------------------------- Skills --------------------------------------------- */
@@ -287,7 +304,7 @@ body {
 }
 .wrapper p {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 1em;
 }
@@ -416,7 +433,7 @@ body {
   background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9) 0,
-      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.3) 60%,
       rgba(0, 0, 0) 100%
     ),
     url(./images/background3.jpg);
@@ -440,7 +457,7 @@ form {
   margin-top: 70px;
   margin-bottom: 70px;
   padding: 70px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   border-bottom: none;
 }
@@ -470,14 +487,14 @@ textarea {
   font-size: 1.2em;
   color: rgba(255, 255, 255, 0.7);
   padding: 10px 40px;
-  background-color: rgba(15, 51, 96, 0.8);
+  background-color: rgba(62, 15, 96, 0.6);
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 .form-button:hover {
   transition: all 0.3s ease;
-  background-color: #184070;
-  color: rgba(255, 255, 255);
+  background-color: rgba(62, 15, 96, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
 .footer-container {
@@ -513,7 +530,6 @@ textarea {
   grid-area: 1/1/3/2;
 }
 .left-footer a {
-  font-family: "Poppins", sans-serif;
   font-size: 23px;
   padding-top: 10px;
   text-decoration: none;
@@ -522,7 +538,6 @@ textarea {
 }
 .left-footer a:hover {
   color: white;
-  filter: drop-shadow(0px 0px 25px white);
 }
 .left-footer img {
   height: 23px;
@@ -564,7 +579,7 @@ textarea {
   .navbar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(2, 40px);
+    grid-template-rows: repeat(2, 30px);
     padding: 10px 15px;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -603,8 +618,7 @@ textarea {
     padding-top: 10px;
     width: 80%;
     color: whitesmoke;
-    font-size: 0.4em;
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
   }
   #portfolio-img {
@@ -633,15 +647,15 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 3px 15px;
-    font-size: 0.8rem;
+    padding: 3px 12px;
+    font-size: 0.6rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 10px;
+    height: 0.6rem;
     padding-right: 7px;
   }
   h1 {
@@ -704,7 +718,7 @@ textarea {
     font-size: 0.6em;
     color: rgba(255, 255, 255, 0.7);
     padding: 5px 20px;
-    border-radius: 30px;
+    border-radius: 5px;
   }
   .footer-container {
     margin: auto;
@@ -745,7 +759,7 @@ textarea {
   }
   .left-footer a:hover {
     color: white;
-    filter: drop-shadow(0px 0px 25px white);
+    filter: drop-shadow(0px 0px 18px white);
   }
   .left-footer img {
     height: 16px;
@@ -827,8 +841,7 @@ textarea {
     display: flex;
     padding-top: 15px;
     color: whitesmoke;
-    font-size: 0.4em;
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   #portfolio-img {
     grid-area: 1/3/2/5;
@@ -840,6 +853,9 @@ textarea {
   #portfolio-img img {
     height: 180px;
     filter: drop-shadow(8px 8px 45px #0f3460);
+  }
+  .underline {
+    width: 3.8em;
   }
   .social {
     font-size: 1.2rem;
@@ -854,13 +870,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 3px 17px;
-    font-size: 0.8rem;
+    padding: 3px 13px;
+    font-size: 0.6rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 11px;
+    height: 0.6rem;
     padding-right: 7px;
   }
   h1 {
@@ -929,7 +945,7 @@ textarea {
     font-size: 0.8em;
     color: rgba(255, 255, 255, 0.7);
     padding: 7px 21px;
-    border-radius: 30px;
+    border-radius: 6px;
   }
   .footer-container {
     margin: auto;
@@ -970,7 +986,7 @@ textarea {
   }
   .left-footer a:hover {
     color: white;
-    filter: drop-shadow(0px 0px 25px white);
+    filter: drop-shadow(0px 0px 18px white);
   }
   .left-footer img {
     height: 16px;
@@ -1051,9 +1067,7 @@ textarea {
     display: flex;
     padding-top: 15px;
     color: whitesmoke;
-    font-size: 0.4em;
-    width: 80%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   #portfolio-img {
     grid-area: 1/7/2/8;
@@ -1064,6 +1078,9 @@ textarea {
   #portfolio-img img {
     height: 200px;
     filter: drop-shadow(8px 8px 45px #0f3460);
+  }
+  .underline {
+    width: 3.7em;
   }
   .social {
     font-size: 1.5rem;
@@ -1078,13 +1095,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 5px 20px;
-    font-size: 0.9rem;
+    padding: 5px 15px;
+    font-size: 0.7rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 13px;
+    height: 0.7rem;
     padding-right: 8px;
   }
   .containers-box {
@@ -1150,7 +1167,7 @@ textarea {
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.7);
     padding: 7px 25px;
-    border-radius: 30px;
+    border-radius: 7px;
   }
   .name {
     padding-top: 12px;
@@ -1175,7 +1192,7 @@ textarea {
   }
   .left-footer a:hover {
     color: white;
-    filter: drop-shadow(0px 0px 25px white);
+    filter: drop-shadow(0px 0px 18px white);
   }
   .left-footer img {
     height: 17px;
@@ -1254,9 +1271,8 @@ textarea {
     display: flex;
     padding-top: 15px;
     color: whitesmoke;
-    font-size: 0.4em;
     width: 80%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   #portfolio-img {
     grid-area: 1/7/2/8;
@@ -1267,6 +1283,9 @@ textarea {
   #portfolio-img img {
     height: 230px;
     filter: drop-shadow(10px 10px 50px #0f3460);
+  }
+  .underline {
+    width: 3.7em;
   }
   .social {
     font-size: 1.8rem;
@@ -1281,13 +1300,13 @@ textarea {
     justify-content: flex-start;
     margin-top: 17px;
     background-color: rgba(15, 51, 96, 0.6);
-    padding: 5px 25px;
-    font-size: 1.1rem;
+    padding: 5px 20px;
+    font-size: 0.9rem;
     border-radius: 50px;
     border: none;
   }
   .resume-btn img {
-    height: 15px;
+    height: 0.9rem;
     padding-right: 7px;
   }
   .containers-box {
@@ -1352,7 +1371,7 @@ textarea {
     font-size: 1em;
     color: rgba(255, 255, 255, 0.7);
     padding: 9px 30px;
-    border-radius: 30px;
+    border-radius: 8px;
   }
   .name {
     padding-top: 15px;
@@ -1377,7 +1396,7 @@ textarea {
   }
   .left-footer a:hover {
     color: white;
-    filter: drop-shadow(0px 0px 25px white);
+    filter: drop-shadow(0px 0px 18px white);
   }
   .left-footer img {
     height: 20px;
