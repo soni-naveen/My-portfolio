@@ -617,6 +617,7 @@ textarea {
     display: flex;
     padding-top: 10px;
     width: 80%;
+    font-size: 0.4em;
     color: whitesmoke;
     font-family: "Open Sans", sans-serif;
     text-align: center;
