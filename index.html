@@ -41,7 +41,7 @@
       <main>
         <div class="navbar white mainfont">
           <div class="left">
-            <img src="./images/code-slash.svg" alt="logo" />Naveen Soni
+            <img src="./images/code-slash.svg" alt="logo" /><span style="cursor: pointer;" onclick="refresh()">Naveen Soni</span>
           </div>
           <div class="right">
             <li>
@@ -443,6 +443,11 @@
       </main>
     </footer>
 
+    <script>
+      function refresh(){
+        location.reload();
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/315d853545.js"
       crossorigin="anonymous"
