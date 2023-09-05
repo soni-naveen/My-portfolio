@@ -360,7 +360,7 @@ nav {
 }
 /*----------------------------------------- Achievements ------------------------------------------- */
 
-#achievements {
+#work {
   padding: 50px 0;
   background: linear-gradient(
       0deg,
@@ -371,7 +371,7 @@ nav {
     url(./images/background4.jpg);
   background-size: cover;
 }
-#achievements main {
+#work main {
   max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
@@ -804,7 +804,7 @@ textarea {
   #projects {
     padding: 20px 0;
   }
-  #achievements {
+  #work {
     padding: 20px 0;
   }
   #contact {
@@ -1038,7 +1038,7 @@ textarea {
   #projects {
     padding: 30px 0;
   }
-  #achievements {
+  #work {
     padding: 30px 0;
   }
   #contact {
@@ -1242,7 +1242,7 @@ textarea {
   #projects {
     padding: 35px 0;
   }
-  #achievements {
+  #work {
     padding: 35px 0;
   }
   #contact {
@@ -1446,7 +1446,7 @@ textarea {
   #projects {
     padding: 40px 0;
   }
-  #achievements {
+  #work {
     padding: 40px 0;
   }
   #contact {
