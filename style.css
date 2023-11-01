@@ -277,6 +277,11 @@ nav {
   width: 100%;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.255);
+  transition: 0.4s ease-in-out;
+}
+.banner-image:hover{
+  transform: scale(1.12);
+  transition: 0.3s ease-in-out;
 }
 .img1 {
   background-image: url(./images/TodoList.png);
@@ -500,13 +505,10 @@ textarea {
   padding: 15px 40px;
   background-color: #3b1a74;
   border-radius: 7px;
-  transition: all 0.2s ease;
 }
-.form-button:hover {
-  transition: all 0.2s ease;
-  background-color: rgba(18, 94, 145, 0.7);
+.form-button:active {
+  background-color: rgba(8, 187, 95, 0.7);
   color: rgba(255, 255, 255, 0.9);
-  cursor: pointer;
 }
 .footer-container {
   width: 88%;
