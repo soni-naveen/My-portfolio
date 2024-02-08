@@ -34,7 +34,7 @@ h1 {
   text-align: center;
 }
 body {
-  background-color: #261445;
+  background-color: #010003;
 }
 /* --------------------------------- Navbar & Introduction -------------------------------------- */
 
@@ -56,7 +56,6 @@ nav {
 }
 .navbar {
   display: grid;
-  background-color: #261445;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
   column-gap: 1rem;
@@ -213,7 +212,7 @@ image {
 .box {
   height: 170px;
   width: 170px;
-  box-shadow: 0px 0px 7px 1px rgba(173, 216, 230, 0.3);
+  box-shadow: 4px 4px 7px 1px rgba(173, 216, 230, 0.3);
   background-color: rgba(173, 216, 230, 0.1);
   font-size: 0.9em;
   display: flex;
@@ -221,9 +220,13 @@ image {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 10px;
+  border-radius: 20px;
 }
 .img-h {
   height: 7em;
+}
+.img-he {
+  height: 2.5em;
 }
 /*------------------------------------------ Projects -------------------------------------------- */
 
@@ -244,14 +247,15 @@ image {
   margin-right: auto;
 }
 .containers-box {
-  margin: 0 7%;
+  margin: 0 3%;
   display: flex;
   flex-wrap: wrap;
   gap: 4em;
   justify-content: center;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 40px;
+  padding-top: 40px !important;
 }
 .container {
   backdrop-filter: blur(16px) saturate(180%);
@@ -259,16 +263,16 @@ image {
   background-color: rgba(32, 55, 97, 0.2);
   filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .wrapper {
-  width: 220px;
+  width: 200px;
   height: 100%;
 }
 .banner-image {
@@ -277,13 +281,12 @@ image {
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.255);
+  width: 200px;
+  border-radius: 2px;
+  /* border: 1px solid rgba(255, 255, 255, 0.255); */
   transition: 0.4s ease-in-out;
 }
 .banner-image:hover {
-  transform: scale(1.12);
   transition: 0.3s ease-in-out;
 }
 .img1 {
@@ -297,10 +300,13 @@ image {
   background-image: url(./images/temp-convt.png);
 }
 .img4 {
-  background-image: url(./images/add_details.png);
+  background-image: url(./images/simongame.png);
 }
-.img5 {
-  background-image: url(./images/pingpong.png);
+.pingpongvideo {
+  border-radius: 2px;
+  height: 200px;
+  object-fit: fill;
+  width: 200px;
 }
 .img6 {
   background-image: url(./images/singledigitcounter.png);
@@ -309,22 +315,33 @@ image {
   background-image: url(./images/toggleview.png);
 }
 .img8 {
-  background-image: url(./images/calculator.png);
+  background-image: url(./images/userauth.jpg);
 }
-.wrapper h1 {
+.proj-txt-cont h3{
   font-family: "Titillium Web", sans-serif;
   color: rgba(255, 255, 255, 0.98);
   text-transform: uppercase;
   font-size: 1.5em;
+  letter-spacing: 2px;
 }
-.wrapper p {
-  color: rgba(255, 255, 255, 0.5);
+.proj-txt-cont p {
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 1em;
+  width: 230px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
 }
 .button-wrapper {
-  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proj-btn-cont{
+  display: flex;
+  justify-content: center;
+  width: 230px;
 }
 .btn {
   font-family: "Roboto", sans-serif;
@@ -345,7 +362,7 @@ image {
   transition: all 0.3s ease;
 }
 .outline:hover {
-  transform: scale(1.125);
+  transform: scale(1.05);
   color: white;
   border-color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
@@ -357,11 +374,11 @@ image {
   transition: all 0.3s ease;
 }
 .fill:hover {
-  transform: scale(1.125);
+  transform: scale(1.05);
   border-color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
 }
-/*----------------------------------------- Experience ------------------------------------------- */
+/*----------------------------------------- Education ------------------------------------------- */
 
 #experience {
   padding: 50px 0;
@@ -442,6 +459,7 @@ image {
 .achieves p {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
 /*------------------------------------------ Contact --------------------------------------------- */
@@ -702,6 +720,27 @@ textarea {
   .img-h {
     height: 5em;
   }
+  .containers-box {
+    margin: 0;
+    padding: 10px;
+  }
+  .container{
+    padding: 5px;
+    flex-direction: column;
+  }
+  .wrapper{
+    margin-top: 10px;
+  }
+  .button-wrapper{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .proj-txt-cont p {
+    width: 180px;
+  }
+  .proj-btn-cont{
+    width: 220px;
+  }
   .date {
     font-size: 0.7em;
   }
@@ -929,6 +968,19 @@ textarea {
   }
   .img-h {
     height: 6em;
+  }
+  .containers-box {
+    margin: 0;
+    padding: 20px;
+  }
+  .container{
+    padding: 10px;
+  }
+  .proj-txt-cont p {
+    width: 200px;
+  }
+  .proj-btn-cont{
+    width: 230px;
   }
   .date {
     font-size: 1em;
@@ -1158,6 +1210,19 @@ textarea {
   .img-h {
     height: 6em;
   }
+  .containers-box {
+    margin: 0;
+    padding: 20px;
+  }
+  .container{
+    padding: 10px;
+  }
+  .proj-txt-cont p {
+    width: 200px;
+  }
+  .proj-btn-cont{
+    width: 230px;
+  }
   .date {
     font-size: 1.4em;
   }
@@ -1361,6 +1426,19 @@ textarea {
   }
   .img-h {
     height: 6em;
+  }
+  .containers-box {
+    margin: 0;
+    padding: 20px;
+  }
+  .container{
+    padding: 10px;
+  }
+  .proj-txt-cont p {
+    width: 200px;
+  }
+  .proj-btn-cont{
+    width: 230px;
   }
   .achieves {
     max-width: 1000px;
