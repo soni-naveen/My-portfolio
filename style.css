@@ -283,7 +283,7 @@ image {
   height: 200px;
   width: 200px;
   border-radius: 2px;
-  /* border: 1px solid rgba(255, 255, 255, 0.255); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.4s ease-in-out;
 }
 .banner-image:hover {
@@ -344,7 +344,7 @@ image {
   align-items: center;
   width: 230px;
 }
-.proj-btn-cont a{
+.proj-btn-cont a {
   text-decoration: none;
 }
 .btn {
