@@ -59,7 +59,7 @@ nav {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
   column-gap: 1rem;
-  padding: 20px 80px;
+  padding: 25px 80px;
 }
 .navbar .right {
   list-style-type: none;
@@ -201,6 +201,12 @@ image {
   margin-left: auto;
   margin-right: auto;
 }
+#skills .subheading {
+  font-weight: bold;
+}
+.multi-img {
+  display: flex;
+}
 .boxes {
   margin: 0 17%;
   padding: 50px 0;
@@ -211,22 +217,21 @@ image {
 }
 .box {
   height: 170px;
-  width: 170px;
-  box-shadow: 4px 4px 7px 1px rgba(173, 216, 230, 0.3);
-  background-color: rgba(173, 216, 230, 0.1);
+  width: 190px;
+  box-shadow: 5px 5px 7px 1px rgba(215, 188, 245, 0.3);
+  background-color: rgba(203, 173, 230, 0.2);
   font-size: 0.9em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 10px;
   border-radius: 20px;
 }
 .img-h {
-  height: 7em;
+  height: 5em;
 }
 .img-he {
-  height: 2.5em;
+  height: 2.3em;
 }
 /*------------------------------------------ Projects -------------------------------------------- */
 
@@ -376,7 +381,7 @@ image {
 .fill {
   background: #49228d;
   color: white;
-  padding: 6.5px 30px;
+  padding: 6.5px 15px;
   letter-spacing: 2px;
   transition: all 0.3s ease;
 }
@@ -723,10 +728,10 @@ textarea {
   .box {
     height: 100px;
     width: 100px;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .img-h {
-    height: 5em;
+    height: 4em;
   }
   .containers-box {
     margin: 0;
@@ -972,10 +977,10 @@ textarea {
   .box {
     height: 120px;
     width: 120px;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .img-h {
-    height: 6em;
+    height: 5em;
   }
   .containers-box {
     margin: 0;
@@ -1213,10 +1218,10 @@ textarea {
   .box {
     height: 140px;
     width: 140px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .img-h {
-    height: 6em;
+    height: 5em;
   }
   .containers-box {
     margin: 0;
@@ -1430,10 +1435,10 @@ textarea {
   .box {
     height: 150px;
     width: 150px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .img-h {
-    height: 6em;
+    height: 5em;
   }
   .containers-box {
     margin: 0;
