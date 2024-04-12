@@ -218,14 +218,14 @@ image {
 .box {
   height: 170px;
   width: 190px;
-  box-shadow: 5px 5px 7px 1px rgba(215, 188, 245, 0.3);
+  /* box-shadow: 5px 5px 7px 1px rgba(215, 188, 245, 0.3); */
   background-color: rgba(203, 173, 230, 0.2);
   font-size: 0.9em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 2px;
 }
 .img-h {
   height: 5em;
