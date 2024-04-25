@@ -147,27 +147,20 @@ nav {
   padding-top: 25px;
 }
 #portfolio-img svg {
-  height: 300px;
+  height: 350px;
 }
 image {
   height: 80px;
 }
 .underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  width: 3.3em;
-}
-.social {
-  font-size: 2.5rem;
-  margin-top: 20px;
+  width: 15rem;
 }
 .social:hover {
   cursor: default;
 }
-.social i {
-  padding: 10px;
-}
-.social i:hover {
-  color: white;
+.social a {
+  padding: 8px;
 }
 .resume-btn {
   color: white;
@@ -609,11 +602,9 @@ textarea {
 .footer-container .social {
   grid-area: 1/3/2/4;
   display: flex;
+  gap: 10px;
   justify-content: flex-end;
   align-items: center;
-}
-.footer-container .social a {
-  padding: 7px;
 }
 /*---------------------------------------- Media Queries ------------------------------------------*/
 
@@ -645,7 +636,7 @@ textarea {
     justify-content: center;
   }
   .intro {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     font-size: 23px;
     display: grid;
@@ -664,7 +655,7 @@ textarea {
     display: flex;
     padding-top: 10px;
     width: 80%;
-    font-size: 0.4em;
+    font-size: 0.6rem;
     color: whitesmoke;
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -678,16 +669,19 @@ textarea {
     padding-top: 0px;
   }
   #portfolio-img svg {
-    height: 150px;
+    height: 200px;
   }
   .underline {
-    width: 4.8em;
+    width: 10rem;
   }
   .social {
-    font-size: 1.4rem;
-    margin-top: 20px;
+    margin-top: 15px;
   }
-  .social i {
+  .social img {
+    height: 20px;
+    width: 20px;
+  }
+  .social a {
     padding: 5px;
   }
   .resume-btn {
@@ -927,16 +921,19 @@ textarea {
     padding-top: 0px;
   }
   #portfolio-img svg {
-    height: 180px;
+    height: 220px;
   }
   .underline {
-    width: 3.8em;
+    width: 10rem;
   }
   .social {
-    font-size: 1.2rem;
-    margin-top: 20px;
+    margin-top: 15px;
   }
-  .social i {
+  .social img {
+    height: 22px;
+    width: 22px;
+  }
+  .social a {
     padding: 5px;
   }
   .resume-btn {
@@ -1165,16 +1162,19 @@ textarea {
     align-items: center;
   }
   #portfolio-img svg {
-    height: 200px;
+    height: 250px;
   }
   .underline {
-    width: 3.7em;
+    width: 12rem;
   }
   .social {
-    font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 15px;
   }
-  .social i {
+  .social img {
+    height: 25px;
+    width: 25px;
+  }
+  .social a {
     padding: 7px;
   }
   .resume-btn {
@@ -1382,16 +1382,19 @@ textarea {
     align-items: center;
   }
   #portfolio-img svg {
-    height: 230px;
+    height: 270px;
   }
   .underline {
-    width: 3.7em;
+    width: 12rem;
   }
   .social {
-    font-size: 1.8rem;
-    margin-top: 20px;
+    margin-top: 15px;
   }
-  .social i {
+  .social img{
+    height: 25px;
+    width: 25px;
+  }
+  .social a {
     padding: 8px;
   }
   .resume-btn {
