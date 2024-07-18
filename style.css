@@ -157,7 +157,7 @@ image {
   height: 80px;
 }
 .underline {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   width: 15rem;
 }
 .social:hover {
@@ -172,16 +172,12 @@ image {
   align-items: center;
   justify-content: flex-start;
   margin-top: 40px;
-  background-color: transparent;
-  padding: 11px 30px;
-  font-size: 1.3rem;
-  border-radius: 50px;
-  border: 1px solid white;
-}
-.resume-btn:hover {
   cursor: pointer;
   background-color: #3b1e6e;
   border: 1px solid #3b1e6e;
+  padding: 11px 30px;
+  font-size: 1.3rem;
+  border-radius: 50px;
 }
 .resume-btn img {
   height: 1.3rem;
@@ -302,11 +298,11 @@ image {
   background-image: url(./images/snakegame.png);
 }
 .img3 {
-  background-image: url(./images/twitter-clone.png);
-  background-position: left;
+  background-image: url(./images/tictactoe.png);
 }
 .img4 {
-  background-image: url(./images/tictactoe.png);
+  background-image: url(./images/twitter-clone.png);
+  background-position: left;
 }
 .proj-txt-cont h3 {
   font-family: "Titillium Web", sans-serif;
@@ -343,7 +339,8 @@ image {
   font-weight: bold;
   border: none;
   padding: 8px 20px;
-  border-radius: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1px;
   cursor: pointer;
@@ -367,7 +364,7 @@ image {
 .fill {
   background: #49228d;
   color: white;
-  padding: 6.5px 15px;
+  padding: 7px 35px;
   letter-spacing: 2px;
   transition: all 0.3s ease;
 }
@@ -384,9 +381,9 @@ image {
   padding: 50px 0;
   background: linear-gradient(
       0deg,
-      rgba(0, 0, 0),
+      rgba(0, 0, 0, 0.9),
       rgba(4, 1, 27, 0.5),
-      rgba(0, 0, 0)
+      rgba(0, 0, 0, 0.9)
     ),
     url(./images/background4.jpg);
   background-size: cover;
@@ -425,9 +422,11 @@ image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: "Titillium Web", sans-serif;
   padding: 1em;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
 }
 .a1 {
@@ -473,8 +472,8 @@ image {
   background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9) 0,
-      rgba(0, 0, 0, 0.4) 60%,
-      rgba(0, 0, 0) 100%
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.9) 100%
     ),
     url(./images/background3.jpg);
   background-size: cover;
@@ -489,31 +488,28 @@ form {
   justify-content: center;
 }
 .msg-box {
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
   margin-bottom: 70px;
-  padding: 70px;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 70px 100px;
+  background: rgba(0, 0, 0, 0.7);
 }
 input,
 textarea {
   resize: none;
   min-width: 20em;
-  width: 80%;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.6em;
   font-family: "Titillium Web", sans-serif;
-  background-color: transparent;
+  background-color: #161d29;
   border: none;
   outline: none;
   margin-bottom: 50px;
   padding: 17px;
   border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 textarea {
   height: 180px;
@@ -527,8 +523,11 @@ textarea {
   font-size: 1.1em;
   color: rgba(255, 255, 255, 0.8);
   padding: 15px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
   background-color: #3b1a74;
-  border-radius: 7px;
+  border-radius: 4px;
 }
 .form-button:active {
   background-color: rgba(8, 187, 95, 0.7);
@@ -610,6 +609,9 @@ textarea {
 @media (max-width: 350px) {
   .navbar .right {
     font-size: 0.6rem !important;
+  }
+  .msg-box {
+    width: 90%;
   }
 }
 @media (max-width: 480px) {
@@ -748,10 +750,10 @@ textarea {
     width: 220px;
   }
   .date {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   .h-achieve {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .achieve p {
     font-size: 0.6em;
@@ -760,15 +762,12 @@ textarea {
     height: 6px;
   }
   .msg-box {
-    width: 70%;
     margin-top: 50px;
-    padding: 30px;
+    padding: 30px 40px;
     border-radius: 15px;
   }
   input,
   textarea {
-    width: 90%;
-    min-width: 13em;
     font-size: 0.8em;
     margin-bottom: 20px;
     padding: 7px;
@@ -992,7 +991,7 @@ textarea {
     width: 230px;
   }
   .date {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .h-achieve {
     font-size: 1.2em;
@@ -1009,16 +1008,12 @@ textarea {
     background-color: #1a1a2e;
   }
   .msg-box {
-    width: 67%;
     margin-top: 50px;
-    padding: 50px;
+    padding: 40px 50px;
     border-radius: 20px;
   }
   input,
   textarea {
-    width: 80%;
-    min-width: 14em;
-    max-width: 18em;
     font-size: 1.1em;
     padding: 10px;
     margin-bottom: 30px;
@@ -1236,7 +1231,7 @@ textarea {
     width: 230px;
   }
   .date {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
   .h-achieve {
     font-size: 1.5em;
@@ -1248,15 +1243,12 @@ textarea {
     height: 10px;
   }
   .msg-box {
-    width: 65%;
     margin-top: 50px;
-    padding: 50px;
+    padding: 50px 70px;
     border-radius: 25px;
   }
   input,
   textarea {
-    width: 75%;
-    min-width: 17em;
     font-size: 1.2em;
     margin-bottom: 40px;
     padding: 15px;
@@ -1459,7 +1451,7 @@ textarea {
     max-width: 1000px;
   }
   .date {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
   .h-achieve {
     font-size: 1.7em;
@@ -1472,13 +1464,11 @@ textarea {
   }
   .msg-box {
     margin-top: 50px;
-    padding: 60px;
+    padding: 60px 90px;
     border-radius: 30px;
   }
   input,
   textarea {
-    width: 60%;
-    max-width: 20em;
     font-size: 1.4em;
     margin-bottom: 50px;
   }

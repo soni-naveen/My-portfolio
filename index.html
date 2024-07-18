@@ -30,6 +30,7 @@
       rel="stylesheet"
     />
     <!-- style  -->
+    <link rel="preload" href="./style.css" as="style" />
     <link rel="stylesheet" href="./style.css" />
     <!-- animation -->
     <link
@@ -91,7 +92,7 @@
             <a
               style="text-decoration: none; color: whitesmoke"
               target="_blank"
-              href="./images/Naveen_Soni_Resume.pdf"
+              href="./images/Naveen_Soni.pdf"
             >
               <button class="resume-btn mainfont">
                 <img src="./images/download.svg" alt="download" />
@@ -181,11 +182,12 @@
         <div class="subheading white otherfont">What I have done</div>
         <div class="boxes white otherfont">
           <div class="box">
-            <div class="multi-img">
-              <p><img class="img-h" src="./images/html.svg" alt="html" /></p>
-              <p><img class="img-h" src="./images/css.svg" alt="css" /></p>
-            </div>
-            <p>HTML, CSS</p>
+            <p><img class="img-h" src="./images/html.svg" alt="html" /></p>
+            <p>HTML</p>
+          </div>
+          <div class="box">
+            <p><img class="img-h" src="./images/css.svg" alt="css" /></p>
+            <p>CSS</p>
           </div>
           <div class="box">
             <p>
@@ -206,20 +208,6 @@
               />
             </p>
             <p>Tailwind CSS</p>
-          </div>
-          <div class="box">
-            <div class="multi-img">
-              <p><img class="img-h" src="./images/git.svg" alt="git" /></p>
-              <p>
-                <img
-                  class="img-h"
-                  style="border-radius: 50px"
-                  src="./images/github.svg"
-                  alt="github"
-                />
-              </p>
-            </div>
-            <p>Git, GitHub</p>
           </div>
           <div class="box">
             <p>
@@ -246,25 +234,25 @@
             <p>Node Js</p>
           </div>
           <div class="box">
-            <p><img class="img-h" src="./images/java.svg" alt="java" /></p>
-            <p>Java</p>
-          </div>
-          <div class="box">
-            <p>
-              <img class="img-h" src="./images/aws.svg" alt="AWS" />
-            </p>
-            <p>AWS</p>
+            <div class="multi-img">
+              <p><img class="img-h" src="./images/git.svg" alt="git" /></p>
+            </div>
+            <p>Git</p>
           </div>
           <div class="box">
             <p>
               <img
                 class="img-h"
-                style="border-radius: 5px"
-                src="./images/linux.svg"
-                alt="linux"
+                style="border-radius: 50px"
+                src="./images/github.svg"
+                alt="github"
               />
             </p>
-            <p>Linux</p>
+            <p>Github</p>
+          </div>
+          <div class="box">
+            <p><img class="img-h" src="./images/java.svg" alt="java" /></p>
+            <p>Java</p>
           </div>
           <div class="box">
             <p>
@@ -292,7 +280,7 @@
             <div class="button-wrapper">
               <div class="proj-txt-cont">
                 <h3>EcoRide</h3>
-                <p>A complete MERN stack carpooling web app.</p>
+                <p>A comprehensive MERN stack carpooling web app.</p>
               </div>
               <div class="proj-btn-cont">
                 <a href="https://theecoride.in" target="_blank"
@@ -313,9 +301,6 @@
                 <p>Game built using HTML5, CSS and JavaScript.</p>
               </div>
               <div class="proj-btn-cont">
-                <a href="https://github.com/soni-naveen/Snake-game.git"
-                  ><button class="btn outline">CODE</button></a
-                >
                 <a href="https://snakegamebynaveen.netlify.app" target="_blank"
                   ><button class="btn fill">
                     Live&nbsp;
@@ -330,15 +315,14 @@
             </div>
             <div class="button-wrapper">
               <div class="proj-txt-cont">
-                <h3>Twitter Clone</h3>
-                <p>Basic clone made with HTML, CSS & JavaScript.</p>
+                <h3>Tic tac toe</h3>
+                <p>
+                  A two-player game using web sockets for real-time interaction.
+                </p>
               </div>
               <div class="proj-btn-cont">
-                <a href="https://github.com/soni-naveen/Twitter-Clone.git"
-                  ><button class="btn outline">CODE</button></a
-                >
                 <a
-                  href="https://twitter-clone-basic.netlify.app"
+                  href="https://tictactoebynaveen.onrender.com"
                   target="_blank"
                   ><button class="btn fill">
                     Live&nbsp;
@@ -353,15 +337,12 @@
             </div>
             <div class="button-wrapper">
               <div class="proj-txt-cont">
-                <h3>Tic tac toe</h3>
-                <p>A puzzle game for two players, "X" and "O".</p>
+                <h3>Twitter Clone</h3>
+                <p>Built a basic clone using HTML, CSS & JavaScript.</p>
               </div>
               <div class="proj-btn-cont">
-                <a href="https://github.com/soni-naveen/Tic-tac-toe-game.git"
-                  ><button class="btn outline">CODE</button></a
-                >
                 <a
-                  href="https://tic-tac-toe-onlinegame.netlify.app"
+                  href="https://twitter-clone-basic.netlify.app"
                   target="_blank"
                   ><button class="btn fill">
                     Live&nbsp;
@@ -378,7 +359,7 @@
       <h1 class="white mainfont">EDUCATION</h1>
       <main>
         <div class="achieves">
-          <div class="date d1">Sept 2021 - Sept 2025</div>
+          <div class="date d1">Sept 2021 - Present</div>
           <div class="date d2">Apr 2019 - Mar 2020</div>
           <div class="date d3">Apr 2017 - Mar 2018</div>
           <!-- <div class="date d4">Sep 2022</div>
@@ -393,7 +374,7 @@
           </div>
           <div class="achieve a3">
             <div class="h-achieve">Class X, CBSE</div>
-            <p>S.M Little Angel's School, Haryana</p>
+            <p>S.M.L.A Middle School, Haryana</p>
           </div>
           <!-- <div class="achieve a4">
             <div class="h-achieve">Coding Ninjas certification</div>
