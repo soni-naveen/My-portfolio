@@ -690,11 +690,11 @@ textarea {
     align-items: center;
     justify-content: flex-start;
     margin-top: 20px;
-    background-color: transparent;
     padding: 7px 17px;
     font-size: 0.8rem;
     border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: #3b1e6e;
+    border: 1px solid #3b1e6e;
   }
   .resume-btn img {
     height: 0.8rem;
@@ -939,11 +939,11 @@ textarea {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background-color: transparent;
     padding: 7px 17px;
     font-size: 0.7rem;
     border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: #3b1e6e;
+    border: 1px solid #3b1e6e;
   }
   .resume-btn img {
     height: 0.7rem;
@@ -1176,11 +1176,11 @@ textarea {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background-color: transparent;
+    background-color: #3b1e6e;
+    border: 1px solid #3b1e6e;
     padding: 8px 18px;
     font-size: 0.8rem;
     border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
   }
   .resume-btn img {
     height: 0.8rem;
@@ -1393,11 +1393,11 @@ textarea {
     align-items: center;
     justify-content: flex-start;
     margin-top: 17px;
-    background-color: transparent;
     padding: 9px 20px;
     font-size: 0.9rem;
     border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: #3b1e6e;
+    border: 1px solid #3b1e6e;
   }
   .resume-btn img {
     height: 0.9rem;
