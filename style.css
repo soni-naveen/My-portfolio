@@ -304,6 +304,13 @@ image {
   background-image: url(./images/twitter-clone.png);
   background-position: left;
 }
+.img5 {
+  background-image: url(./images/todolist.png);
+}
+.img6 {
+  background-image: url(./images/traveltracker.png);
+  background-position: left;
+}
 .proj-txt-cont h3 {
   font-family: "Titillium Web", sans-serif;
   color: rgba(255, 255, 255, 0.98);
