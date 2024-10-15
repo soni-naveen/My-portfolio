@@ -293,6 +293,7 @@ image {
 }
 .img1 {
   background-image: url(./images/Ecoride.png);
+  background-position: left;
 }
 .img2 {
   background-image: url(./images/snakegame.png);
@@ -308,8 +309,8 @@ image {
   background-image: url(./images/fruitai.png);
 }
 .img6 {
-  background-image: url(./images/traveltracker.png);
-  background-position: left;
+  background-image: url(./images/esocial.png);
+  background-position: center;
 }
 .proj-txt-cont h3 {
   font-family: "Titillium Web", sans-serif;
